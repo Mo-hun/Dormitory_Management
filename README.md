@@ -2,7 +2,7 @@
 ## 광주소프트웨어마이스터고등학교 기숙사 사생 관리 웹사이트
 <hr>
 <br>
-https://img.shields.io/badge/<Website>-<Go>-<brightgreen>.svg 
+https://img.shields.io/badge/Website-Go-brightgreen.svg 
 <br>
 <hr>
 Client 요구 사항
