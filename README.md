@@ -2,7 +2,7 @@
 ## 광주소프트웨어마이스터고등학교 기숙사 사생 관리 웹사이트
 <hr>
 <br>
-[![Build Status](https://travis-ci.com/createmohun/Dormitory_Management.svg?token=14xp4hJd1XWphxnhD3ks&branch=master)](https://travis-ci.com/createmohun/Dormitory_Management)
+![GitHub](https://img.shields.io/github/license/createmohun/Dormitory_Management.svg?style=flat-square)
 <br>
 <hr>
 Client 요구 사항
