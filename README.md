@@ -2,7 +2,7 @@
 ## 광주소프트웨어마이스터고등학교 기숙사 사생 관리 웹사이트
 <hr>
 <br>
-[build status badge](https://img.shields.io/travis/website-go-brightgreen)](http://벌점왕hs.com)
+[![Build Status](https://travis-ci.com/createmohun/Dormitory_Management.svg?token=14xp4hJd1XWphxnhD3ks&branch=master)](https://travis-ci.com/createmohun/Dormitory_Management)
 <br>
 <hr>
 Client 요구 사항
