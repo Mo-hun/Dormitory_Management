@@ -3,12 +3,10 @@
 <footer class="container">
   <h6 class="text-center">
     Copyright 2019-
-    <a href="https://twitter.com/twiceland1109">Mohun</a>
+    <a href="https://github.com/createmohun">Mohun</a>
     all rights reserved.
     <br>
     email : ahgns1515@naver.com
-    <br>
-    twitter : 내맘이네전부를기억해 @twiceland1109
     <br>
     <a href="http://validator.kldp.org/check?uri=referer" onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))">
       <img src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15" width="80">
