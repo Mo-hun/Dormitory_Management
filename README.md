@@ -4,7 +4,7 @@
 
 <a href="http://벌점왕hs.com" alt="GoWebSite">
 <img src="https://img.shields.io/github/license/createmohun/Dormitory_Management.svg?style=flat-square" />
-<img src="https://img.shields.io/github/commit-activity/m/createmohun/Dormitory_Management.svg?url=http://www.벌점왕hs.com&style=flat-square" />
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/createmohun/Dormitory_Management.svg">
 <img src="https://img.shields.io/github/last-commit/createmohun/Dormitory_Management.svg?url=http://www.벌점왕hs.com&style=flat-square" />
 <img src="https://img.shields.io/github/languages/count/createmohun/Dormitory_Management.svg?url=http://www.벌점왕hs.com&style=flat-square" />
 <img src="https://img.shields.io/github/languages/top/createmohun/Dormitory_Management.svg?url=http://www.벌점왕hs.com&style=flat-square" />
