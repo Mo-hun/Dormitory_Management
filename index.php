@@ -10,6 +10,7 @@
   ?>
 <html lang="ko" dir="ltr">
   <head>
+    <meta charset="utf-8">
     <?php
       include_once('./include/head.php');
      ?>
