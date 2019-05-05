@@ -5,9 +5,6 @@
 <?php
   include_once('./include/dbconnect.php');
  ?>
- <?php
-   include_once('./include/session.php');
-  ?>
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
