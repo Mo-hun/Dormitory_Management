@@ -11,9 +11,12 @@
     <?php
       include_once('./include/head.php');
      ?>
+     <?php
+      include_once('./include/head_main.php');
+      ?>
     <title>벌점왕HS - Main</title>
   </head>
-  <body>
+  <body class="bg-dark text-white">
      <?php
       include_once('./include/main.php');
       ?>
