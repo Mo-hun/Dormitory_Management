@@ -1,4 +1,3 @@
-<!-- main -->
 <!-- 대문 시작 -->
 <div class="jumbotron bg-dark">
   <div class="container text-white">
@@ -8,31 +7,32 @@
   </div>
 </div>
 <!-- 대문 끝 -->
+<!-- main -->
 <div class="container">
   <div class="card-deck">
       <div class="card">
-        <a href="#" class="font-weight-bold">
+        <a href="/student_login" class="font-weight-bold">
           <div class="card-body">
             <h5 class="card-title font-weight-bold">학생으로 접속하기</h5>
-            <p class="card-text">Accessing as a student.</p>
+            <p class="card-text">Accessing as a Student.</p>
             <p class="card-text"><small class="text-muted"><?php echo $version;?></small></p>
           </div>
         </a>
       </div>
       <div class="card">
-        <a href="#" class="font-weight-bold">
+        <a href="/dormitory_inspector_login" class="font-weight-bold">
           <div class="card-body">
             <h5 class="card-title font-weight-bold">사감으로 접속하기</h5>
-            <p class="card-text">Accessing as a student.</p>
+            <p class="card-text">Accessing as a Dormitory Inspector.</p>
             <p class="card-text"><small class="text-muted"><?php echo $version;?></small></p>
           </div>
         </a>
       </div>
       <div class="card">
-        <a href="#" class="font-weight-bold">
+        <a href="/administrator_login" class="font-weight-bold">
           <div class="card-body">
             <h5 class="card-title font-weight-bold">관리자로 접속하기</h5>
-            <p class="card-text">Accessing as a student.</p>
+            <p class="card-text">Accessing as a Administrator.</p>
             <p class="card-text"><small class="text-muted"><?php echo $version;?></small></p>
           </div>
         </a>

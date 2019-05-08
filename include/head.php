@@ -9,8 +9,8 @@
   <meta property="og:description" content="광주소프트웨어마이스터고등학교 사생관리 웹사이트">
   <meta property="og:image" content="https://www.벌점왕hs.com/logo.jpg">
   <meta property="og:url" content="https://www.벌점왕hs.com/logo.jpg">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="./CSS/bootstrap.css">
   <link rel="stylesheet" href="./CSS/bootstrap-grid.css">
   <link rel="stylesheet" href="./CSS/bootstrap-reboot.css">

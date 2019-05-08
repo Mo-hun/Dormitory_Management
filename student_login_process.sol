@@ -14,16 +14,16 @@
      <?php
       include_once('./include/head_main.php');
       ?>
-    <title>벌점왕HS - Main</title>
+    <title>벌점왕HS - LoginError</title>
   </head>
   <body class="bg-dark text-white">
       <?php
         include_once('./include/index_islogin.php');
        ?>
+      <?php
+        include_once('./include/student_login_process.php');
+       ?>
      <?php
-      include_once('./include/main.php');
-      ?>
-    <?php
       include_once('./include/copyright.php');
      ?>
      <?php
