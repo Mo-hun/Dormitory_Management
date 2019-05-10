@@ -14,16 +14,16 @@
      <?php
       include_once('./include/head_main.php');
       ?>
-      <?php
-        include_once('./include/islogin.php');
-       ?>
-    <title>벌점왕HS - <?php echo $group;?></title>
+    <title>벌점왕HS - login</title>
   </head>
   <body class="bg-dark text-white">
-    <?php
-      include_once('./include/go_group.php');
-     ?>
-    <?php
+      <?php
+        include_once('./include/index_islogin.php');
+       ?>
+     <?php
+      include_once('./include/dormitory_inspector_login.php');
+      ?>
+     <?php
       include_once('./include/copyright.php');
      ?>
      <?php

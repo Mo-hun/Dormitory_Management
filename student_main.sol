@@ -17,12 +17,13 @@
       <?php
         include_once('./include/islogin.php');
        ?>
-    <title>벌점왕HS - <?php echo $group;?></title>
+    <title>벌점왕HS - Student_main</title>
   </head>
   <body class="bg-dark text-white">
     <?php
-      include_once('./include/go_group.php');
+      include_once('./include/isstudent.php');
      ?>
+
     <?php
       include_once('./include/copyright.php');
      ?>
