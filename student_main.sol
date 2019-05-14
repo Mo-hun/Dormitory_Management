@@ -23,7 +23,9 @@
     <?php
       include_once('./include/isstudent.php');
      ?>
-
+     <?php
+      include_once('./include/student_navbar.php');
+      ?>
     <?php
       include_once('./include/copyright.php');
      ?>

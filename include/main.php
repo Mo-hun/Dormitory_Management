@@ -1,7 +1,7 @@
 <!-- 대문 시작 -->
 <div class="jumbotron bg-dark">
   <div class="container text-white">
-    <h1 class="display-3 font-weight-bold text-center">벌점왕HS</h1>
+    <h1 class="display-3 font-weight-bold text-center">벌점왕 HS</h1>
       <p class="text-center">광주소프트웨어마이스터고등학교 기숙사 사생 관리 웹사이트</p>
       <p class="text-center"><small>Gwangju Software Meister High School Dormitory Student Management Website</small></p>
   </div>

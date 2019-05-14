@@ -7,7 +7,7 @@ $InputPw = mysqli_real_escape_string($conn, $_POST['InputPw']);
 $first_query = "SELECT * FROM user_info WHERE  user_grade= ".$Grade." AND user_class= ".$Class." AND user_number= ".$Number."";
 $password_hash = hash("sha256", $InputPw);
 $first_result = mysqli_query($conn, $first_query);
-$first = mysqli_fetch_array($first_result);
+$first = mysqli_fetch_assoc($first_result);
 $first_check = $first['user_first'];
 if($first_check == 1) {
   // 학생으로 접속 시 초기값을 지정 하지 않고 접속한 경우로, first_check의 변수 값이 1로 초기 접속이라는 것을 증명 하였다.
