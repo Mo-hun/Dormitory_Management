@@ -15,5 +15,6 @@
   <link rel="stylesheet" href="./CSS/bootstrap-grid.css">
   <link rel="stylesheet" href="./CSS/bootstrap-reboot.css">
   <link rel="stylesheet" href="/CSS/font.css">
+  <link rel="stylesheet" href="/CSS/card.css">
   <meta name="naver-site-verification" content="2bf285b30724c485f7ee8236cb5a619ca9d3df6f"/>
 <!-- /head -->

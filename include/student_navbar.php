@@ -9,16 +9,24 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link text-white" href="/student_point">상*벌점 조회</a>
+          <a class="nav-link text-white" href="/student_point">
+            <img src="./point.png?0004" alt="상*벌점 조회" height="45">
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="/student_notice">전달사항 조회</a>
+          <a class="nav-link text-white" href="/student_notice">
+            <img src="./notice.png?0003" alt="전달사항 조회" height="45">
+          </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" href="/student_volunteer">봉사</a>
+          <a class="nav-link text-white" href="/student_volunteer">
+            <img src="./volunteer.png?0003" alt="봉사" height="45">
+          </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" href="/laptop">노트북 신청</a>
+          <a class="nav-link text-white" href="/laptop">
+            <img src="./laptop.png?0003" alt="노트북 신청" height="45">
+          </a>
         </li>
         <?php
           $first_query = "SELECT * FROM navbar";
@@ -35,6 +43,10 @@
           }
          ?>
       </ul>
+      <?php
+        echo $_SESSION['name']."님, 환영합니다!";
+       ?>
+       &nbsp;&nbsp;&nbsp;&nbsp;
       <button type="button" onclick="location.href='/mypage'" class="btn btn-success">마이페이지 (MyPage)</button>
       &nbsp;&nbsp;
       <button type="button" onclick="location.href='/logout'" class="btn btn-warning">로그아웃 (Sign out)</button>
