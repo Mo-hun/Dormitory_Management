@@ -5,7 +5,8 @@ $Number = mysqli_real_escape_string($conn, $_POST['Number']);
 $InputId = mysqli_real_escape_string($conn, $_POST['InputId']);
 $InputPw = mysqli_real_escape_string($conn, $_POST['InputPw']);
 $first_query = "SELECT * FROM user_info WHERE  user_grade= ".$Grade." AND user_class= ".$Class." AND user_number= ".$Number."";
-$password_hash = hash("sha256", $InputPw);
+$password_hash_before = hash("sha512", $InputPw);
+$password_hash = "H05S31".$password_hash_before."H05S31";
 $first_result = mysqli_query($conn, $first_query);
 $first = mysqli_fetch_array($first_result);
 $first_check = $first['user_first'];
@@ -22,6 +23,7 @@ if($first_check == 1) {
   $_SESSION['gender'] = $first[5];
   $_SESSION['id'] = $InputId;
   $_SESSION['first'] = $first[8];
+  $_SESSION['group'] = "Dormitory_inspector";
   header('Location: /main');
 }else if($first_check == 0){
   //초기 접속이 아닌 경우
@@ -35,6 +37,7 @@ if($first_check == 1) {
       $_SESSION['gender'] = $first[5];
       $_SESSION['id'] = $first[6];
       $_SESSION['first'] = $first[8];
+      $_SESSION['group'] = "Dormitory_inspector";
       header('Location: /main');
     }else {
         echo "<script> alert( '아이디와 비밀번호를 다시 확인해 주세요.' ); window.location.href = '/student_login';</script>";

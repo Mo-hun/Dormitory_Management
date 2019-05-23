@@ -1,12 +1,10 @@
 <?php
-if(!isset($_SESSION['idx'])) {
-  echo "<script>window.location.href = '/';</script>";
-}else if($_SESSION['grade']<10) {
-  echo "<script>window.location.href = '/student_main';</script>";
+if($_SESSION['grade']<10) {
+  header('Location: /student_main');
 }else if($_SESSION['grade']<1011) {
-  echo "<script>window.location.href = '/administrator_main';</script>";
+  header('Location: /administrator_main');
 }else if($_SESSION['grade']<1023) {
-  echo "<script>window.location.href = '/dormitory_inspector_main';</script>";
+  header('Location: /dormitory_inspector_main');
 }else {
   echo "<script>window.location.href = '/';</script>";
 }

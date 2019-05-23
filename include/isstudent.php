@@ -1,5 +1,6 @@
 <?php
-  if(!($_SESSION['grade'] < 10)) {
-    echo "<script>window.location.href = '/main';</script>";
+  if(!($_SESSION['group'] == "Student")) {
+    header('Location: /');
   }
  ?>
+ 

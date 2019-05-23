@@ -63,11 +63,6 @@
       <input type="password" class="form-control" name="InputPw" id="InputPw" placeholder="Enter your Password" aria-describedby="PwHelp">
       <small id="PwHelp" class="form-text text-muted">Pw를 입력하세요. 초기의 경우 설정하고 싶은 비밀번호를 입력하세요.</small>
     </div>
-    <div class="form-group">
-      <label for="InputPwCheck">비밀번호 확인 (PwCheck)</label>
-      <input type="password" class="form-control" name="InputPwCheck" id="InputPwCheck" placeholder="Repeat your Password" aria-describedby="PwCheckHelp">
-      <small id="PwCheckHelp" class="form-text text-muted">초기의 경우에만 비밀번호 확인을 해주세요.</small>
-    </div>
     <button type="submit" class="btn btn-primary">Login</button>
     <button type="button" class="btn btn-secondary" onclick="window.location.href='/';">Go Home</button>
   </form>

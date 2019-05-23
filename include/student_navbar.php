@@ -1,55 +1,42 @@
-<!-- 네비바 시작 -->
-  <nav class="navbar navbar-expand-sm navbar-light bg-dark border border-top-0 border-right-0 border-left-0 border-dark">
-    <a class="navbar-brand" href="/student_main">
-      <img src="./logo.png?0001" alt="Main" height="45">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="/student_point">
-            <img src="./point.png?0004" alt="상*벌점 조회" height="45">
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="/student_notice">
-            <img src="./notice.png?0003" alt="전달사항 조회" height="45">
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="/student_volunteer">
-            <img src="./volunteer.png?0003" alt="봉사" height="45">
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="/laptop">
-            <img src="./laptop.png?0003" alt="노트북 신청" height="45">
-          </a>
-        </li>
-        <?php
-          $first_query = "SELECT * FROM navbar";
-          $first_result = mysqli_query($conn, $first_query);
-          $no1 = 0;
-          while( $row1 =  mysqli_fetch_array($first_result) ) {
-            if($row1['navbar_status'] == 1) {
-         ?>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="/<?php echo $row1['navbar_link'];?>"><?php echo $row1['navbar_name'];?></a>
-        </li>
-        <?php
-            }
-          }
-         ?>
-      </ul>
-      <?php
-        echo $_SESSION['name']."님, 환영합니다!";
-       ?>
-       &nbsp;&nbsp;&nbsp;&nbsp;
-      <button type="button" onclick="location.href='/mypage'" class="btn btn-success">마이페이지 (MyPage)</button>
-      &nbsp;&nbsp;
-      <button type="button" onclick="location.href='/logout'" class="btn btn-warning">로그아웃 (Sign out)</button>
+<!-- NAVBAR -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="brand" style="padding: 15px;">
+    <a href="/main"><img src="logo_black.png" alt="Logo" height="50px"></a>
+  </div>
+  <div class="container-fluid">
+    <div class="navbar-btn">
+      <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
     </div>
-  </nav>
-<!-- 네비바 끝 -->
+    <div class="navbar-btn navbar-btn-right">
+      <a class="btn btn-success update-pro" href="/logout" title="LOG OUT"><span>LOG OUT</span></a>
+    </div>
+    <div id="navbar-menu">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+            <i class="lnr lnr-alarm"></i>
+            <span class="badge bg-danger"><?php ?></span>
+          </a>
+          <ul class="dropdown-menu notifications">
+            <li><a href="#" class="notification-item"><span class="dot bg-warning"></span>현재 알림서비스가 구현 대기중입니다.</a></li>
+            <li><a href="#" class="notification-item"><span class="dot bg-danger"></span>현재 알림서비스가 구현 대기중입니다.</a></li>
+            <li><a href="#" class="notification-item"><span class="dot bg-success"></span>현재 알림서비스가 구현 대기중입니다.</a></li>
+            <li><a href="#" class="notification-item"><span class="dot bg-warning"></span>현재 알림서비스가 구현 대기중입니다.</a></li>
+            <li><a href="#" class="notification-item"><span class="dot bg-success"></span>현재 알림서비스가 구현 대기중입니다.</a></li>
+            <li><a href="#" class="more">현재 알림서비스가 구현 대기중입니다.</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span><?php echo $_SESSION['name'];?></span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><i class="lnr lnr-user"></i> <span>내 정보</span></a></li>
+            <li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
+            <li><a href="#"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li>
+            <li><a href="#"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- END NAVBAR -->
