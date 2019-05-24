@@ -56,7 +56,7 @@
     <div class="form-group">
       <label for="InputId">아이디 (Id)</label>
       <input type="text" class="form-control" name="InputId" id="InputId" aria-describedby="IdHelp" placeholder="Enter your Id">
-      <small id="IdHelp" class="form-text text-muted">Id를 입력하세요. 초기의 경우 설정하고 싶은 아이디를 입력하세요.</small>
+      <small id="IdHelp" class="form-text text-muted">Id를 입력하세요. 초기의 경우 교부 받은 아이디를 입력하세요.</small>
     </div>
     <div class="form-group">
       <label for="InputPw">비밀번호 (Pw)</label>
