@@ -45,7 +45,7 @@
     <div class="form-group">
       <label for="InputPw">비밀번호 (Pw)</label>
       <input type="password" class="form-control" name="InputPw" id="InputPw" placeholder="Enter your Password" aria-describedby="PwHelp">
-      <small id="PwHelp" class="form-text text-muted">Pw를 입력하세요. 초기의 경우 교부 받은 비밀번호를 입력하세요.</small>
+      <small id="PwHelp" class="form-text text-muted">Pw를 입력하세요. 초기의 경우 설정하고 싶은 비밀번호를 입력하세요.</small>
     </div>
     <button type="submit" class="btn btn-primary">Login</button>
     <button type="button" class="btn btn-secondary" onclick="window.location.href='/';">Go Home</button>
