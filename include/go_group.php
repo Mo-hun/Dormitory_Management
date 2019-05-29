@@ -1,9 +1,9 @@
 <?php
 if($_SESSION['grade']<10) {
   header('Location: /student_main');
-}else if($_SESSION['grade']<1011) {
+}else if($_SESSION['grade']==1011) {
   header('Location: /administrator_main');
-}else if($_SESSION['grade']<1023) {
+}else if($_SESSION['grade']==1023) {
   header('Location: /dormitory_inspector_main');
 }else {
   echo "<script>window.location.href = '/';</script>";
