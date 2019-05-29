@@ -20,10 +20,10 @@
         </a>
       </div>
       <div class="card">
-        <a href="/Student_Dormitory_Manager" class="font-weight-bold">
+        <a href="/student_dormitory_inspector_login" class="font-weight-bold">
           <div class="card-body">
             <h5 class="card-title font-weight-bold">기숙사 자치위원회로 접속하기</h5>
-            <p class="card-text">Accessing as a Student Dormitory Manager.</p>
+            <p class="card-text">Accessing as a Student Dormitory Inspector.</p>
             <p class="card-text"><small class="text-muted"><?php echo $version;?></small></p>
           </div>
         </a>
