@@ -28,15 +28,6 @@
           </div>
         </a>
       </div>
-      <div class="card">
-        <a href="/administrator_login" class="font-weight-bold">
-          <div class="card-body">
-            <h5 class="card-title font-weight-bold">관리자로 접속하기</h5>
-            <p class="card-text">Accessing as a Administrator.</p>
-            <p class="card-text"><small class="text-muted"><?php echo $version;?></small></p>
-          </div>
-        </a>
-      </div>
   </div>
 </div>
 <!-- /main -->
