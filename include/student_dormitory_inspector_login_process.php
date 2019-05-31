@@ -1,6 +1,11 @@
 <?php
-$Grade = 531;
-$Class = 531;
+$Grade = 1011;
+$Class = 1011;
+$GroupCode = mysqli_real_escape_string($conn, $_POST['Grade']);
+if($Grade != $GroupCode){
+  header('Location: /');
+  exit;
+}
 $Number = mysqli_real_escape_string($conn, $_POST['Number']);
 $InputId = mysqli_real_escape_string($conn, $_POST['InputId']);
 $InputPw = mysqli_real_escape_string($conn, $_POST['InputPw']);

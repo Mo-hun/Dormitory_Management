@@ -11,9 +11,14 @@
 <div class="container">
   <form method="POST" action="/student_dormitory_inspector_login_process">
     <div class="form-group">
-      <label for="Number">기숙사 자치위원회 코드 (Student Dormitory Inspector Code)</label>
+      <label for="Grade">기숙사 자치위원회 그룹 코드 (Student Dormitory Inspector Group Code)</label>
+      <input type="text" class="form-control" name="Grade" id="Grade" aria-describedby="GradeHelp" placeholder="Enter your Code">
+      <small id="GradeHelp" class="form-text text-muted">기숙사 자치위원회 그룹 코드를 입력하세요. 초기의 경우 사감선생님에게 문의하세요.</small>
+    </div>
+    <div class="form-group">
+      <label for="Number">기숙사 자치위원회 개인 코드 (Student Dormitory Inspector Personal Code)</label>
       <input type="text" class="form-control" name="Number" id="Number" aria-describedby="NumberHelp" placeholder="Enter your Code">
-      <small id="NumberHelp" class="form-text text-muted">기숙사 자치위원회 코드를 입력하세요. 초기의 경우 사감선생님에게 문의하세요.</small>
+      <small id="NumberHelp" class="form-text text-muted">기숙사 자치위원회 개인 코드를 입력하세요. 초기의 경우 사감선생님에게 문의하세요.</small>
     </div>
     <div class="form-group">
     <div class="form-group">
