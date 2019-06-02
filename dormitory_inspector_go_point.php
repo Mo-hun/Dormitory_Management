@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
   <head>
-  	<title>벌점왕 HS - 사감 - 메인</title>
+  	<title>벌점왕 HS - 상*벌점 부여</title>
   	<meta charset="utf-8">
   	<?php
       include_once('./include/template_head.php');
@@ -23,7 +23,7 @@
         include_once('./include/dormitory_inspector_navbar.php');
        ?>
   		<?php
-        $location = "main";
+        $location = "go_point";
         include_once('./include/dormitory_inspector_left_sidebar.php');
        ?>
   		<!-- MAIN -->

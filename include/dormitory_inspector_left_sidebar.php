@@ -3,11 +3,11 @@
   <div class="sidebar-scroll">
     <nav>
       <ul class="nav">
-        <li><a href="/dormitory_inspector_main" class="active"><i class="lnr lnr-home"></i> <span>메인  </span></a></li>
-        <li><a href="/dormitory_inspector_go_point" class=""><i class="lnr lnr-code"></i> <span>Elements</span></a></li>
-        <li><a href="charts.html" class=""><i class="lnr lnr-chart-bars"></i> <span>Charts</span></a></li>
-        <li><a href="panels.html" class=""><i class="lnr lnr-cog"></i> <span>Panels</span></a></li>
-        <li><a href="notifications.html" class=""><i class="lnr lnr-alarm"></i> <span>Notifications</span></a></li>
+        <li><a href="/dormitory_inspector_main" <?php if($location == "main") { ?>class="active" <?php } ?>><i class="lnr lnr-home"></i> <span>메인</span></a></li>
+        <li><a href="/dormitory_inspector_go_point" <?php if($location == "go_point") { ?>class="active" <?php } ?>><i class="lnr lnr-code"></i> <span>상*벌점 부여</span></a></li>
+        <li><a href="/dormitory_inspector_volunteer" class=""><i class="lnr lnr-chart-bars"></i> <span>봉사관리</span></a></li>
+        <li><a href="/dormitory_inspector_student_check" class=""><i class="lnr lnr-cog"></i> <span>점호/인원점검</span></a></li>
+        <li><a href="dormitory_inspector_notice" class=""><i class="lnr lnr-alarm"></i> <span>전달사항</span></a></li>
         <li>
           <a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>Pages</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
           <div id="subPages" class="collapse ">
