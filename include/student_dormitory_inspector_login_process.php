@@ -30,7 +30,7 @@ if($first_check == 1) {
   $_SESSION['first'] = $first['user_first'];
   $_SESSION['point'] = $first['user_point'];
   $_SESSION['outcount'] = $first['user_outcount'];
-  $_SESSION['group'] = "Dormitory_inspector";
+  $_SESSION['group'] = "Student_dormitory_inspector";
   header('Location: /main');
 }else if($first_check == 0){
   //초기 접속이 아닌 경우
@@ -46,7 +46,7 @@ if($first_check == 1) {
       $_SESSION['first'] = $first['user_first'];
       $_SESSION['point'] = $first['user_point'];
       $_SESSION['outcount'] = $first['user_outcount'];
-      $_SESSION['group'] = "Dormitory_inspector";
+      $_SESSION['group'] = "Student_dormitory_inspector";
       header('Location: /main');
     }else {
         echo "<script> alert( '아이디와 비밀번호를 다시 확인해 주세요.' ); window.location.href = '/dormitory_inspector_login';</script>";
