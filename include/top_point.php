@@ -25,6 +25,11 @@
          <?php
          $no = 1;
          while($rank = mysqli_fetch_assoc($rank_result)) {
+           if($rank['user_grade'] == 4860 || $rank['user_grade'] == 1011){
+             $rank['user_grade'] = "-";
+             $rank['user_class'] = "-";
+             $rank['user_number'] = "-";
+           }
           ?>
          <tr>
            <td><?php echo $no; ?></td>
@@ -52,9 +57,11 @@
              }else if($point_status >= 80) {
                $point_message = "warning";
              }
+           }else{
+             $point_message = "success";
            }
             ?>
-           <td><span class="label label-<?php echo $point_message; ?>"><?php echo $safe_point; ?></span></td>
+           <td><span class="label label-<?php echo $point_message; ?>"><?php echo $safe_point; ?>점! </span></td>
          </tr>
        <?php } ?>
        </tbody>
@@ -62,7 +69,7 @@
    </div>
    <div class="panel-footer">
      <div class="row">
-       <div class="col-md-6 text-right"><a href="/point_rank" class="btn btn-primary">전체 순위 보기</a></div>
+       <div class="text-right"><a href="/point_rank" class="btn btn-primary">전체 순위 보기</a></div>
      </div>
    </div>
  </div>
