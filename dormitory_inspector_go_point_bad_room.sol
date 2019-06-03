@@ -48,62 +48,10 @@
        </div>
        <!-- END LEFT SIDEBAR -->
   		<!-- MAIN -->
-  		<div class="main">
-  			<!-- MAIN CONTENT -->
-  			<div class="main-content">
-  				<div class="container-fluid">
-            <div class="col-md-3">
-              <div class="panel">
-                <div class="panel-heading">
-                  <h3 class="panel-title">벌점 지급</h3>
-                  <div class="right">
-                    <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="row text-center">
-                    <a href="/dormitory_inspector_go_point_bad_room"><div class="btn btn-info">호실원 벌점</div></a>
-                    <a href="/dormitory_inspector_go_point_bad_student"><div class="btn btn-info">개인별 벌점</div></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="panel">
-                <div class="panel-heading">
-                  <h3 class="panel-title">상점 지급</h3>
-                  <div class="right">
-                    <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="row text-center">
-                    <a href="/dormitory_inspector_go_point_good_room"><div class="btn btn-primary">호실원 상점</div></a>
-                    <a href="/dormitory_inspector_go_point_good_student"><div class="btn btn-primary">개인별 상점</div></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="panel">
-                <div class="panel-heading">
-                  <h3 class="panel-title">선택하여 상*벌점주기</h3>
-                  <div class="right">
-                    <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="row text-center">
-                    <a href="/dormitory_inspector_go_point_select"><div class="btn btn-primary">선택하여 상*벌점주기</div></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-  			   </div>
-  		  </div>
-  			<!-- END MAIN CONTENT -->
-  	   </div>
-  		<!-- END MAIN -->
+      <div class="main">
+        <iframe src="/dormitory_inspector_go_point_bad_room_list" frameborder="0" height="5000px" width="100%"></iframe>
+      </div>
+
   		<div class="clearfix"></div>
     </div>
   	<!-- END WRAPPER -->
