@@ -30,13 +30,7 @@
              $rank['user_class'] = "-";
              $rank['user_number'] = "-";
            }
-          ?>
-         <tr>
-           <td><?php echo $no; ?></td>
-           <td><?php echo $rank['user_grade'].$rank['user_class'].sprintf('%02d',$rank['user_number']); ?></td>
-           <td><?php echo $rank['user_name']; ?></td>
-           <td class="text-left"><?php echo $rank['user_point']."점"; ?></td>
-           <?php
+          ?>] <?php
            $first_query = "SELECT * FROM user_info WHERE  user_grade= ".$rank['user_grade']." AND user_class= ".$rank['user_class']." AND user_number= ".$rank['user_number']."";
            $first_result = mysqli_query($conn, $first_query);
            $first = mysqli_fetch_assoc($first_result);
@@ -66,6 +60,11 @@
            }
            $no++;
             ?>
+         <tr>
+           <td><?php echo $no; ?></td>
+           <td><?php echo $rank['user_grade'].$rank['user_class'].sprintf('%02d',$rank['user_number']); ?></td>
+           <td><?php echo $rank['user_name']; ?></td>
+           <td class="text-left"><?php echo $point_kind." ".abs($rank['user_point'])."점"; ?></td>
            <td><span class="label label-<?php echo $point_message; ?>"><?php echo $safe_point; ?>점! </span></td>
          </tr>
        <?php } ?>
