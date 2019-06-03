@@ -60,6 +60,13 @@
                  ?>
                 <!-- END RECENT PURCHASES -->
               </div>
+              <div class="col-md-6">
+                <!-- RECENT PURCHASES -->
+                <?php
+                  include_once('./include/top_point.php');
+                 ?>
+                <!-- END RECENT PURCHASES -->
+              </div>
             </div>
             <div class="row">
               <div class="col-md-7">
