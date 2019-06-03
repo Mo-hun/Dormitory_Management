@@ -33,9 +33,9 @@
           ?>
          <tr>
            <td><?php echo $no; ?></td>
-           <td><?php echo $rank['user_grade'].$rank['user_class'].$rank['user_number']; ?></td>
+           <td><?php echo $rank['user_grade'].$rank['user_class'].sprintf('%02d',$rank['user_number']); ?></td>
            <td><?php echo $rank['user_name']; ?></td>
-           <td><?php echo $rank['user_point']; ?></td>
+           <td class="text-left"><?php echo $rank['user_point']."점"; ?></td>
            <?php
            $first_query = "SELECT * FROM user_info WHERE  user_grade= ".$rank['user_grade']." AND user_class= ".$rank['user_class']." AND user_number= ".$rank['user_number']."";
            $first_result = mysqli_query($conn, $first_query);
@@ -48,18 +48,23 @@
              $point_kind = "벌점";
              $point_kindness = "danger";
            }
-           $safe_point = (double)$first['user_outcount'] * 10 + 20 - $point;
-           $point_status = (double)($point / ($first['user_outcount'] * 10 + 20)) * 100;
+           $safe_point = (double)$first['user_outcount'] * 10 + 21 - $point;
+           $point_status = (double)($point / ($first['user_outcount'] * 10 + 21)) * 100;
 
            if($point_kind == "벌점") {
-             if($point_status >= 100)  {
+             if($point_status >= 90)  {
                $point_message = "danger";
-             }else if($point_status >= 80) {
+             }else if($point_status >= 75) {
                $point_message = "warning";
+             }else if($point_status >= 30) {
+               $point_message = "success";
+             }else {
+               $point_message = "info";
              }
            }else{
-             $point_message = "success";
+             $point_message = "primary";
            }
+           $no++;
             ?>
            <td><span class="label label-<?php echo $point_message; ?>"><?php echo $safe_point; ?>점! </span></td>
          </tr>
