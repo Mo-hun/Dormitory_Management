@@ -1,20 +1,13 @@
 <!-- main -->
 <br><br>
-<div class="container">
-  <div class="card-deck">
-    <?php
-      $room3 = 301;
-      while($room3 < 311) {
-     ?>
-     <a href="/bad_room?room=<?php echo $room3;?>" class="font-weight-bold">
-      <div class="card border-primary mb-3">
-          <div class="card-body text-primary">
-            <h5 class="text-center card-title font-weight-bold"><?php echo $room3; ?></h5>
-          </div>
-      </div>
-      </a>
-      <?php
-      $room3 = $room3 + 1;
-    } ?>
-  </div>
+<?php
+$room_no = $_GET['room'];
+?>
+<div class="jumbotron bg-dark">
+ <div class="container text-white">
+   <h1 class="display-3 font-weight-bold text-center">호실원   벌점</h1>
+     <p class="text-center">선택된 호실은 <?php echo $room_no; ?>호 입니다.</p>
+     <p class="text-center"><small>Test</small></p>
+ </div>
 </div>
+<?php ?>

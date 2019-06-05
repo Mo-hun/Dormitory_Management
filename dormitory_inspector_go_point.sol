@@ -52,54 +52,39 @@
   			<!-- MAIN CONTENT -->
   			<div class="main-content">
   				<div class="container-fluid">
-            <div class="col-md-3">
-              <div class="panel">
-                <div class="panel-heading">
-                  <h3 class="panel-title">벌점 지급</h3>
-                  <div class="right">
-                    <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+              <?php
+                $room_no = 501;
+                while($room_no<521){
+                    $room_student = "SELECT * FROM room_info WHERE  room_no=".$room_no;
+                    $room_student_result = mysqli_query($conn, $room_student);
+                    $student = mysqli_fetch_row($room_student_result);
+                  ?>
+                  <div class="col-md-2">
+                    <div class="panel">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"><?=$room_no;?></h3>
+                        <div class="right">
+                          <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                        </div>
+                      </div>
+                      <div class="panel-body">
+                        <div class="row text-center">
+                          <?php
+                          $index = 2;
+                          while($student[$index] != "0" && $index < 7){
+                           ?>
+                          <a href="/dormitory_inspector_go_point_bad_room"><div class="btn btn-info"><?php echo $student[$index];?></div></a>
+                        <?php
+                        $index++;
+                       } ?>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="panel-body">
-                  <div class="row text-center">
-                    <a href="/dormitory_inspector_go_point_bad_room"><div class="btn btn-info">호실원 벌점</div></a>
-                    <a href="/dormitory_inspector_go_point_bad_student"><div class="btn btn-info">개인별 벌점</div></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="panel">
-                <div class="panel-heading">
-                  <h3 class="panel-title">상점 지급</h3>
-                  <div class="right">
-                    <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="row text-center">
-                    <a href="/dormitory_inspector_go_point_good_room"><div class="btn btn-primary">호실원 상점</div></a>
-                    <a href="/dormitory_inspector_go_point_good_student"><div class="btn btn-primary">개인별 상점</div></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="panel">
-                <div class="panel-heading">
-                  <h3 class="panel-title">선택하여 상*벌점주기</h3>
-                  <div class="right">
-                    <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="row text-center">
-                    <a href="/dormitory_inspector_go_point_select"><div class="btn btn-primary">선택하여 상*벌점주기</div></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-  			   </div>
+                  <?php
+                  $room_no++;
+                }
+               ?>
   		  </div>
   			<!-- END MAIN CONTENT -->
   	   </div>
