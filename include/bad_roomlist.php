@@ -1,24 +1,18 @@
 <!-- main -->
-<div class="jumbotron bg-dark">
-  <div class="container text-white">
-    <h1 class="display-3 font-weight-bold text-center"></h1>
-      <p class="text-center"></p>
-      <p class="text-center"><small></small></p>
-  </div>
-</div>
+<br><br>
 <div class="container">
   <div class="card-deck">
     <?php
       $room3 = 301;
       while($room3 < 311) {
      ?>
-      <div class="card">
-        <a href="/bad_room?room=<?php echo $room3;?>" class="font-weight-bold">
-          <div class="card-body">
+     <a href="/bad_room?room=<?php echo $room3;?>" class="font-weight-bold">
+      <div class="card border-primary mb-3">
+          <div class="card-body text-primary">
             <h5 class="text-center card-title font-weight-bold"><?php echo $room3; ?></h5>
           </div>
-        </a>
       </div>
+      </a>
       <?php
       $room3 = $room3 + 1;
     } ?>
@@ -30,13 +24,13 @@
     <?php
       while($room3 < 321) {
      ?>
-      <div class="card">
-        <a href="/bad_room?room=<?php echo $room3;?>" class="font-weight-bold">
-          <div class="card-body">
+     <a href="/bad_room?room=<?php echo $room3;?>" class="font-weight-bold">
+      <div class="card border-primary mb-3">
+          <div class="card-body text-primary">
             <h5 class="text-center card-title font-weight-bold"><?php echo $room3; ?></h5>
           </div>
-        </a>
       </div>
+      </a>
       <?php
       $room3 = $room3 + 1;
     } ?>
@@ -49,13 +43,13 @@
       $room4 = 401;
       while($room4 < 411) {
      ?>
-      <div class="card">
-        <a href="/bad_room?room=<?php echo $room4;?>" class="font-weight-bold">
-          <div class="card-body">
+     <a href="/bad_room?room=<?php echo $room4;?>" class="font-weight-bold">
+       <div class="card boarder-warning mb-3">
+          <div class="card-body text-warning">
             <h5 class="text-center card-title font-weight-bold"><?php echo $room4; ?></h5>
           </div>
-        </a>
-      </div>
+        </div>
+      </a>
       <?php
       $room4 = $room4 + 1;
     } ?>
@@ -67,13 +61,13 @@
     <?php
       while($room4 < 421) {
      ?>
-      <div class="card">
-        <a href="/bad_room?room=<?php echo $room4;?>" class="font-weight-bold">
-          <div class="card-body">
+     <a href="/bad_room?room=<?php echo $room4;?>" class="font-weight-bold">
+       <div class="card boarder-warning mb-3">
+          <div class="card-body text-warning">
             <h5 class="text-center card-title font-weight-bold"><?php echo $room4; ?></h5>
           </div>
-        </a>
-      </div>
+        </div>
+      </a>
       <?php
       $room4 = $room4 + 1;
     } ?>
@@ -85,13 +79,13 @@
     <?php
       while($room4 < 422) {
      ?>
-      <div class="card">
-        <a href="/bad_room?room=<?php echo $room4;?>" class="font-weight-bold">
-          <div class="card-body">
+      <a href="/bad_room?room=<?php echo $room4;?>" class="font-weight-bold">
+        <div class="card boarder-warning mb-3">
+          <div class="card-body text-warning">
             <h5 class="text-center card-title font-weight-bold"><?php echo $room4; ?></h5>
           </div>
-        </a>
-      </div>
+        </div>
+      </a>
       <?php
       $room4 = $room4 + 1;
     } ?>
@@ -104,13 +98,13 @@
       $room5 = 501;
       while($room5 < 511) {
      ?>
-      <div class="card">
-        <a href="/bad_room?room=<?php echo $room5;?>" class="font-weight-bold">
+     <a href="/bad_room?room=<?php echo $room5;?>" class="font-weight-bold">
+       <div class="card">
           <div class="card-body">
             <h5 class="text-center card-title font-weight-bold"><?php echo $room5; ?></h5>
           </div>
-        </a>
-      </div>
+        </div>
+      </a>
       <?php
       $room5 = $room5 + 1;
     } ?>
@@ -122,13 +116,13 @@
     <?php
       while($room5 < 521) {
      ?>
-      <div class="card">
-        <a href="/bad_room?room=<?php echo $room5;?>" class="font-weight-bold">
+     <a href="/bad_room?room=<?php echo $room5;?>" class="font-weight-bold">
+       <div class="card">
           <div class="card-body">
             <h5 class="text-center card-title font-weight-bold"><?php echo $room5; ?></h5>
           </div>
-        </a>
-      </div>
+        </div>
+      </a>
       <?php
       $room5 = $room5 + 1;
     } ?>

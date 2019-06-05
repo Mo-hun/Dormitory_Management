@@ -55,9 +55,6 @@
   		<div class="clearfix"></div>
     </div>
   	<!-- END WRAPPER -->
-    <?php
-      include_once('./include/copyright.php');
-     ?>
   	<!-- Javascript -->
     <?php
       include_once('./include/template_script.php');

@@ -21,4 +21,3 @@
 <link rel="stylesheet" href="assets/css/main.css">
 <!-- GOOGLE FONTS -->
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
-<link rel="stylesheet" href="/CSS/custom_card.css">

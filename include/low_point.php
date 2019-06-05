@@ -30,7 +30,7 @@
              $rank['user_class'] = "-";
              $rank['user_number'] = "-";
            }
-          ?>] <?php
+          ?> <?php
            $first_query = "SELECT * FROM user_info WHERE  user_grade= ".$rank['user_grade']." AND user_class= ".$rank['user_class']." AND user_number= ".$rank['user_number']."";
            $first_result = mysqli_query($conn, $first_query);
            $first = mysqli_fetch_assoc($first_result);

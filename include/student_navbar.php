@@ -1,5 +1,5 @@
 <!-- NAVBAR -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar-default navbar-fixed-top">
   <div class="brand" style="padding: 15px;">
     <a href="/main"><img src="logo_black.png" alt="Logo" height="50px"></a>
   </div>
