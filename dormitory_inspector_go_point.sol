@@ -48,44 +48,9 @@
        </div>
        <!-- END LEFT SIDEBAR -->
   		<!-- MAIN -->
-  		<div class="main">
+  		<div class="main" style="padding-top: 82px;">
   			<!-- MAIN CONTENT -->
-  			<div class="main-content">
-  				<div class="container-fluid">
-              <?php
-                $room_no = 501;
-                while($room_no<521){
-                    $room_student = "SELECT * FROM room_info WHERE  room_no=".$room_no;
-                    $room_student_result = mysqli_query($conn, $room_student);
-                    $student = mysqli_fetch_row($room_student_result);
-                  ?>
-                  <div class="col-md-2">
-                    <div class="panel">
-                      <div class="panel-heading">
-                        <h3 class="panel-title"><?=$room_no;?></h3>
-                        <div class="right">
-                          <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
-                        </div>
-                      </div>
-                      <div class="panel-body">
-                        <div class="row text-center">
-                          <?php
-                          $index = 2;
-                          while($student[$index] != "0" && $index < 7){
-                           ?>
-                          <a href="/dormitory_inspector_go_point_bad_room"><div class="btn btn-info"><?php echo $student[$index];?></div></a>
-                        <?php
-                        $index++;
-                       } ?>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <?php
-                  $room_no++;
-                }
-               ?>
-  		  </div>
+          <iframe src="/go_point_i" frameborder="0" height="5000px" width="100%"></iframe>
   			<!-- END MAIN CONTENT -->
   	   </div>
   		<!-- END MAIN -->
