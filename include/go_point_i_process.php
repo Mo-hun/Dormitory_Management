@@ -3,16 +3,18 @@ $reason = mysqli_real_escape_string($conn, $_POST['name']);
 $student = mysqli_real_escape_string($conn, $_POST['student']);
 $student_list = explode('#', $student);
 for($i = 0; i < count($student_list); i++){
-  if(strpos($student_list[$i], "/")){
-    $first_query = "SELECT * FROM user_info WHERE  user_name= ".$student_list[$i];
-    $first_result[$i] = mysqli_query($conn, $first_query);
-  }else{
-    $temp = explode('/', $student_list[$i]);
-    $temp_idx = str_split($student_list[$i]);
-    $first_query = "SELECT * FROM user_info WHERE  user_name= ".$temp[0]." AND user_grade=".$temp_idx[0]."AND user_class = ".$temp_idx[1]." AND user_no=".$temp_idx[2].$temp_idx[3]."";
-    $first_result[$i] = mysqli_query($conn, $first_query);
-  }
-  echo $first_result[$i];
+  $first_query = "SELECT * FROM user_info WHERE  user_name= ".$student_list[$i];
+  $first_result = mysqli_query($conn, $first_query);
+  // if(strpos($student_list[$i], "/")){
+  //   $first_query = "SELECT * FROM user_info WHERE  user_name= ".$student_list[$i];
+  //   $first_result = mysqli_query($conn, $first_query);
+  // }else{
+  //   $temp = explode('/', $student_list[$i]);
+  //   $temp_idx = str_split($student_list[$i]);
+  //   $first_query = "SELECT * FROM user_info WHERE  user_name= ".$temp[0]." AND user_grade=".$temp_idx[0]."AND user_class = ".$temp_idx[1]." AND user_no=".$temp_idx[2].$temp_idx[3]."";
+  //   $first_result[$i] = mysqli_query($conn, $first_query);
+  // }
+  echo $first_result;
 }
 
 // $Number = mysqli_real_escape_string($conn, $_POST['Number']);
