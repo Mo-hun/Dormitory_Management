@@ -31,7 +31,7 @@
                <input type="text" class="form-control" id="helpdate" name="date" value="<?php echo date("Y-m-d");?>">
              </div>
              <div class="form-group col-md-6">
-               <label for="helpstudent">대상학생(다수일시 #으로 구분. ex-김상현/2222#모훈)</label>
+               <label for="helpstudent">대상학생< /label>
                <input type="text" class="form-control" id="helpstudent" name="student" placeholder="동명이인의 경우 뒤에 학번을 입력주세요. ex-김상현/2222">
              </div>
              <div class="form-group col-md-6">
