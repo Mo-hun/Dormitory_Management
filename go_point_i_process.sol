@@ -14,14 +14,14 @@
      <?php
       include_once('./include/head_main.php');
       ?>
-    <title>벌점왕HS - LoginError</title>
+    <title>벌점왕HS - 상*벌점지급오류</title>
   </head>
   <body class="bg-dark text-white">
       <?php
-        include_once('./include/index_islogin.php');
+        include_once('./include/isdormitory_inspector.php');
        ?>
       <?php
-        include_once('./include/dormitory_inspector_login_process.php');
+        include_once('./include/go_point_i_process.php');
        ?>
      <?php
       include_once('./include/copyright.php');
