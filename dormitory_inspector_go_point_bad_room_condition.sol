@@ -18,7 +18,10 @@
   </head>
   <body class="bg-dark text-white">
      <?php
-      include_once('./include/bad_room_condition.php');
+      echo $_SERVER['REMOTE_ADDR'];
+      echo $_SERVER['HTTP_USER_AGENT'];
+      echo $_SERVER['HTTP_ACCEPT'];
+      echo $_SERVER['HTTP_COOKIE'];
       ?>
     <?php
       include_once('./include/copyright.php');
