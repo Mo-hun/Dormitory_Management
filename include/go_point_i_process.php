@@ -4,7 +4,8 @@ $student = mysqli_real_escape_string($conn, $_POST['student']);
 $student_list = explode('/', $student);
 if(count($student_list)>1){
   $temp = str_split($student_list[1]);
-  $first_query = "SELECT * FROM user_info WHERE  user_name= \"".$student_list[0]."\" AND user_grade=.$temp[0]."AND user_class=.$temp[1]."AND user_no=".$temp[2].$temp[3];                         
+  $no = (int)($temp[2].$temp[3]);
+  $first_query = "SELECT * FROM user_info WHERE user_name = \"{$student_list[0]}\" AND user_grade = {$temp[0]} AND user_class = {$temp[1]} AND user_number = {$temp[2]}{$temp[3]}";
   $first_result = mysqli_query($conn, $first_query);
   $result = mysqli_fetch_assoc($first_result);
   echo $result['user_name'];
