@@ -14,7 +14,7 @@
      <?php
       include_once('./include/head_main.php');
       ?>
-    <title>벌점왕HS - 상*벌점지급</title>
+    <title>벌점왕HS - 계정 정보 변경</title>
   </head>
   <body class="bg-dark text-white">
 
@@ -22,7 +22,7 @@
         include_once('./include/isdormitory_inspector.php');
        ?>
       <?php
-        include_once('./include/go_point_i_process.php');
+        include_once('./include/dormitory_insepctor_mypage_process.php');
        ?>
      <?php
       include_once('./include/copyright.php');
