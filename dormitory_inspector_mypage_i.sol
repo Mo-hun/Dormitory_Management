@@ -22,7 +22,7 @@
              <div class="form-group col-md-6">
                <label for="id">ID</label>
                <input type="text" class="form-control" id="id" name="id" value="<?php echo $_SESSION['id']; ?>">
-               <label for="id">현재 사감선생님의 ID 정보 입니다.</label>
+               <label for="id">현재 사감선생님의 ID 정보 입니다. 변경하실 ID를 입력하세요.</label>
              </div>
              <div class="form-group col-md-6">
                <label for="nowpw">현재PW</label>
