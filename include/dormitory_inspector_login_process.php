@@ -10,10 +10,6 @@ $password_hash = "H05S31".$password_hash_before."H05S31";
 $first_result = mysqli_query($conn, $first_query);
 $first = mysqli_fetch_assoc($first_result);
 $first_check = $first['user_first'];
-if($first_result === false){
-  echo '<script>alert("명령 실행중 오류. 관리자에게 문의하세요. 오류코드 : 6riw67O47KCV67O07KGw7ZqM7Jik66WY");window.history.back();</script>';
-  exit();
-}
 if($first_check == 1) {
   // 학생으로 접속 시 초기값을 지정 하지 않고 접속한 경우로, first_check의 변수 값이 1로 초기 접속이라는 것을 증명 하였다.
   // DB의 초기값 설정 시에, 모든 회원의 user_first 의 값을 1로 설정하여 이상이 없도록 한다.

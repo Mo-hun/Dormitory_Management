@@ -31,12 +31,12 @@
              </div>
              <div class="form-group col-md-6">
                <label for="newpw">변경할PW</label>
-               <input type="text" class="form-control" id="newpw" name="newpw" placeholder="새 비밀번호 (필수 아님)">
+               <input type="password" class="form-control" id="newpw" name="newpw" placeholder="새 비밀번호 (필수 아님)">
                <label for="newpw">비밀번호를 변경하려면 새로 변경할 비밀번호를 입력하세요.</label>
              </div>
              <div class="form-group col-md-6">
                <label for="newpwCheck">변경할PW 재확인</label>
-               <input type="text" class="form-control" id="newpwCheck" name="newpwCheck" placeholder="새 비밀번호 다시 입력 (필수 아님)">
+               <input type="password" class="form-control" id="newpwCheck" name="newpwCheck" placeholder="새 비밀번호 다시 입력 (필수 아님)">
                <label for="newpwCheck">비밀번호를 변경하려면 새로 변경할 비밀번호를 다시한번 입력하세요.</label>
              </div>
            </div>

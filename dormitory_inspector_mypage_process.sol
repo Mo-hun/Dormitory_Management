@@ -17,7 +17,6 @@
     <title>벌점왕HS - 계정 정보 변경</title>
   </head>
   <body class="bg-dark text-white">
-
       <?php
         include_once('./include/isdormitory_inspector.php');
        ?>

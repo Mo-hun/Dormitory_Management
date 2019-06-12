@@ -12,6 +12,14 @@
      <?php
        include_once('./include/dbconnect.php');
       ?>
+      <script type="text/javascript">
+        function goto_main(){
+          window.location.href='./';
+        }
+        window.onload = function(){
+  			frames['ifr'].goto_mainInner();
+  		  }
+      </script>
   </head>
   <body>
     <?php
@@ -50,7 +58,7 @@
   		<!-- MAIN -->
   		<div class="main" style="padding-top: 82px;">
   			<!-- MAIN CONTENT -->
-          <iframe src="/dormitory_inspector_mypage_i" frameborder="0" height="5000px" width="100%"></iframe>
+          <iframe name="ifr" src="/dormitory_inspector_mypage_i" frameborder="0" height="5000px" width="100%"></iframe>
   			<!-- END MAIN CONTENT -->
   	   </div>
   		<!-- END MAIN -->
