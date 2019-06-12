@@ -1,12 +1,27 @@
 <?php
+$pass_hash_before = hash("sha512", $_POST['nowpw']);
+$password_hash = "H05S31".$pass_hash_before."H05S31";
 if($_SESSION['id'] !=  $_POST['id']){
-
+  //아이디 설정 변경
+  $id_query = "UPDATE user_info SET user_id = {$_POST['id']} WHERE user_grade = {$_SESSION['grade']} AND user_class = {$_SESSION['class']} AND user_number = {$_SESSION['number']}";
+  $id_result = mysqli_query($conn, $id_query);
 }
 if($_POST['newpwCheckbox'] == 1 ){
-  echo "비밀번호 변경 모드";
+  $InputnPw = $_POST['newpw'];
+  $npassword_hash_before = hash("sha512", $InputnPw);
+  $npassword_hash = "H05S31".$npassword_hash_before."H05S31";
+  $InputnPwCheck = $_POST['newpwCheck'];
+  $npasswordcheck_hash_before = hash("sha512", $InputnPwCheck);
+  $npasswordcheck_hash = "H05S31".$npasswordcheck_hash_before."H05S31";
+  if($npassword_hash != $npasswordcheck_hash){
+    echo "<script>alert('변경할 비밀번호와 비밀번호 확인이 일치하지 않습니다.');window.history.back();</script>";
+  }
+  $first_query = "UPDATE user_info SET user_";
 }else {
   echo "비밀번호 고정 모드";
-// }
+}
+
+
 // $InputId = mysqli_real_escape_string($conn, $_POST['InputId']);
 // $InputPw = mysqli_real_escape_string($conn, $_POST['InputPw']);
 // $first_query = "SELECT * FROM user_info WHERE  user_grade= ".$Grade." AND user_class= ".$Class." AND user_number= ".$Number."";
