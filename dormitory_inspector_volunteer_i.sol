@@ -23,6 +23,7 @@
           <tr>
             <th scope="col">그룹</th>
             <th scope="col">학번</th>
+            <th scope="col">이름</th>
             <th scope="col">회차별 점수</th>
             <th scope="col">채워야 할 횟수</th>
             <th scope="col">한 횟수</th>
@@ -50,6 +51,11 @@
             </td>
             <td>
               <div class="form-group">
+                <input type="text" class="form-control" name="<?=$row['volunteer_idx'];?>_no" id="<?=$row['volunteer_idx'];?>_name" value="<?php echo $no['user_name'];?>" disabled>
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
                 <input type="text" class="form-control" name="<?=$row['volunteer_idx'];?>_point" id="<?=$row['volunteer_idx'];?>_point" value="<?=$row['volunteer_point'];?>">
               </div>
             </td>
@@ -69,6 +75,7 @@
           <td colspan="11">
           <div class="form-group">
             <button type="submit" class="btn btn-primary">변경</button>
+            <button type="button" class="btn btn-info" onclick="location.href='/dormitory_inspector_volunteer_add_i'">추가</button>
           </div>
           </td>
         </tr>

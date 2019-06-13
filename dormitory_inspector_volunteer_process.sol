@@ -21,7 +21,7 @@
         include_once('./include/isdormitory_inspector.php');
        ?>
       <?php
-        include_once('./include/dormitory_inspector_change_room_process.php');
+        include_once('./include/dormitory_inspector_volunteer_process.php');
        ?>
      <?php
       include_once('./include/copyright.php');
