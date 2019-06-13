@@ -12,6 +12,14 @@
      <?php
        include_once('./include/dbconnect.php');
       ?>
+      <script type="text/javascript">
+        function goto_main(){
+          window.location.href='./';
+        }
+        window.onload = function(){
+  			frames['ifr'].goto_mainInner();
+  		  }
+      </script>
   </head>
   <body>
     <?php
@@ -56,6 +64,27 @@
   		<!-- END MAIN -->
   		<div class="clearfix"></div>
     </div>
+    <script type="text/javascript">
+      function custom_timer(second){
+        document.getElementById('reset_second').innerHTML = second;
+        if(second <= 1){
+          setTimeout("custom_location()", 1000);
+        }else{
+          --second;
+          setTimeout("custom_timer("+second+");", 1000);
+        }
+      };
+      function custom_location(){
+        var check = confirm("새로 고침 하시겠습니까?");
+        if(check == true){
+          window.location.href='/go_point_i';
+        }else{
+          document.getElementById("reset_second").innerHTML = 3;
+          custom_timer(3);
+        }
+      };
+      custom_timer(3);
+    </script>
   	<!-- END WRAPPER -->
     <?php
       include_once('./include/copyright.php');
