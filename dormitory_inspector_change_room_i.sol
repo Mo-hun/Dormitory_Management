@@ -44,56 +44,63 @@
             <th scope="row"><?=$row['room_no'];?></th>
             <td>
               <div class="form-group">
-                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student_no_1" placeholder="<?=$row['student1'];?>">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student_no_1" value="<?=$row['student1'];?>">
               </div>
             </td>
             <td>
               <div class="form-group">
-                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student1" placeholder="<?=$row['room_student_1'];?>">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student1" value="<?=$row['room_student_1'];?>">
               </div>
             </td>
             <td>
               <div class="form-group">
-                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student_no_2" placeholder="<?=$row['student2'];?>">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student_no_2" value="<?=$row['student2'];?>">
               </div>
             </td>
             <td>
               <div class="form-group">
-                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student2" placeholder="<?=$row['room_student_2'];?>">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student2" value="<?=$row['room_student_2'];?>">
               </div>
             </td>
             <td>
               <div class="form-group">
-                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student_no_3" placeholder="<?=$row['student3'];?>">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student_no_3" value="<?=$row['student3'];?>">
               </div>
             </td>
             <td>
               <div class="form-group">
-                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student3" placeholder="<?=$row['room_student_3'];?>">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student3" value="<?=$row['room_student_3'];?>">
               </div>
             </td>
             <td>
               <div class="form-group">
-                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student_no_4" placeholder="<?=$row['student4'];?>">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student_no_4" value="<?=$row['student4'];?>">
               </div>
             </td>
             <td>
               <div class="form-group">
-                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student4" placeholder="<?=$row['room_student_4'];?>">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student4" value="<?=$row['room_student_4'];?>">
               </div>
             </td>
             <td>
               <div class="form-group">
-                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student_no_5" placeholder="<?=$row['student5'];?>">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student_no_5" value="<?=$row['student5'];?>">
               </div>
             </td>
             <td>
               <div class="form-group">
-                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student5" placeholder="<?=$row['room_student_5'];?>">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student5" value="<?=$row['room_student_5'];?>">
               </div>
             </td>
           </tr>
         <?php   } ?>
+        <tr>
+          <td colspan="11">
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">변경</button>
+          </div>
+          </td>
+        </tr>
         </tbody>
       </table>
     </form>
