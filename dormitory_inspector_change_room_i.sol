@@ -24,45 +24,76 @@
             <th scope="col">호실</th>
             <th scope="col">학번</th>
             <th scope="col">이름</th>
-            <th scope="col">여백</th>
-            <th scope="col">호실</th>
             <th scope="col">학번</th>
             <th scope="col">이름</th>
-            <th scope="col">여백</th>
-            <th scope="col">호실</th>
+            <th scope="col">학번</th>
+            <th scope="col">이름</th>
+            <th scope="col">학번</th>
+            <th scope="col">이름</th>
             <th scope="col">학번</th>
             <th scope="col">이름</th>
           </tr>
         </thead>
         <tbody>
+          <?php
+            $first_query = "SELECT * FROM room_info ";
+            $first_result = mysqli_query($conn, $first_query);
+            while($row = mysqli_fetch_assoc($first_result)){
+           ?>
           <tr>
-            <?php
-              $first_query = "SELECT * FROM room_info ";
-              $first_result = mysqli_query($conn, $first_query);
-              
-             ?>
-            <th scope="row" rowspan="5">301</th>
-            <td>1218</td>
-            <td>정인교</td>
-            <td></td>
-            <th scope="row" rowspan="5">401</th>
-            <td>3203</td>
-            <td>김동국</td>
-            <th scope="row" rowspan="5">501</th>
-            <td>1406</td>
-            <td>김수현</td>
+            <th scope="row"><?=$row['room_no'];?></th>
+            <td>
+              <div class="form-group">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student_no_1" placeholder="<?=$row['student1'];?>">
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student1" placeholder="<?=$row['room_student_1'];?>">
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student_no_2" placeholder="<?=$row['student2'];?>">
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student2" placeholder="<?=$row['room_student_2'];?>">
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student_no_3" placeholder="<?=$row['student3'];?>">
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student3" placeholder="<?=$row['room_student_3'];?>">
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student_no_4" placeholder="<?=$row['student4'];?>">
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student4" placeholder="<?=$row['room_student_4'];?>">
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student_no_5" placeholder="<?=$row['student5'];?>">
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <input type="text" class="form-control" id="<?=$row['room_no'];?>_student5" placeholder="<?=$row['room_student_5'];?>">
+              </div>
+            </td>
           </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
+        <?php   } ?>
         </tbody>
       </table>
     </form>
