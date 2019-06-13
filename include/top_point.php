@@ -59,7 +59,7 @@
           }else{
             $point_message = "primary";
           }
-          $no++;
+
            ?>
          <tr>
            <td><?php echo $no; ?></td>
@@ -68,7 +68,7 @@
            <td class="text-left"><?php echo $point_kind." ".abs($rank['user_point'])."점"; ?></td>
            <td><span class="label label-<?php echo $point_message; ?>"><?php echo $safe_point; ?>점! </span></td>
          </tr>
-       <?php } ?>
+       <?php $no++;} ?>
        </tbody>
      </table>
    </div>
