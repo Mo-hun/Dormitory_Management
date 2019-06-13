@@ -36,6 +36,11 @@
         </thead>
         <tbody>
           <tr>
+            <?php
+              $first_query = "SELECT * FROM room_info ";
+              $first_result = mysqli_query($conn, $first_query);
+              
+             ?>
             <th scope="row" rowspan="5">301</th>
             <td>1218</td>
             <td>정인교</td>
