@@ -37,7 +37,6 @@
              <ul class="nav">
                <li><a href="/dormitory_inspector_main"><i class="lnr lnr-home"></i> <span>메인</span></a></li>
                <li><a href="/dormitory_inspector_go_point"><i class="lnr lnr-magic-wand"></i> <span>상*벌점 부여</span></a></li>
-               <li><a href="/dormitory_inspector_volunteer"><i class="lnr lnr-star-empty"></i> <span>봉사관리</span></a></li>
                <li><a href="/dormitory_inspector_notice" class="active"><i class="lnr lnr-bullhorn"></i> <span>전달사항</span></a></li>
                <li>
                  <a href="#subPages" data-toggle="collapse" class="collapsed" aria-expanded="true"><i class="lnr lnr-pencil"></i> <span>정보변경</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
