@@ -1,8 +1,9 @@
 <?php
+  include_once('./include/dbconnect.php');
 $title = mysqli_real_escape_string($conn, $_POST['title']);
 $body = mysqli_real_escape_string($conn, $_POST['body']);
 
-$first_query = "INSERT INTO user_notice (notice_title, notice_body, notice_stautus) VALUES ( \"{$title}\", \"{$body}\", 0)"  ;
+$first_query = "INSERT INTO user_notice (notice_title, notice_body, notice_status) VALUES ( \"{$title}\", \"{$body}\", 0)"  ;
 $first_result = mysqli_query($conn, $first_query);
 $result = mysqli_fetch_assoc($first_result);
 ?>

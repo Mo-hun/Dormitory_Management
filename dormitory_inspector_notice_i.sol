@@ -24,7 +24,7 @@
             <div class="form-row">
              <div class="form-group col-md-6">
                <label for="title">제목</label>
-               <input type="text" class="form-control" id="title" name="title">
+               <input type="text" class="form-control" id="title" name="title" placeholder="공지할 내용의 제목을 입력하세요.">
                <label for="title">공지할 내용의 제목을 입력하세요.</label>
              </div>
              <div class="form-group col-md-6">
@@ -33,8 +33,8 @@
                <label for="body">공지할 내용을 입력하세요.</label>
              </div>
            <br>
-           <div class="form-group row">
-             <div class="col-sm-10">
+           <div class="form-group col">
+             <div>
                <button type="submit" class="btn btn-primary">공지</button>
              </div>
            </div>
