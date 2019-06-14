@@ -1,7 +1,7 @@
 <?php
   include_once('./include/dbconnect.php');
   $idx = $_SESSION['idx'];
-  $rank_query = "SELECT * FROM user_point WHERE point_user = {$idx} ORDER BY point_no DESC";
+  $rank_query = "SELECT * FROM user_point WHERE point_user = {$idx} ORDER BY point_no ASC";
   $rank_result = mysqli_query($conn, $rank_query);
  ?>
  <div class="panel">
