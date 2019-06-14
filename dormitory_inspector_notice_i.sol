@@ -35,7 +35,7 @@
            <br>
            <div class="form-group row">
              <div class="col-sm-10">
-               <button type="submit" class="btn btn-primary">계정 정보 변경하기</button>
+               <button type="submit" class="btn btn-primary">공지</button>
              </div>
            </div>
         </form>
