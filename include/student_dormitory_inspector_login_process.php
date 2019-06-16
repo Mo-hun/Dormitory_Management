@@ -57,6 +57,6 @@ if($first_check == 1) {
         echo "<script> alert( '아이디와 비밀번호를 다시 확인해 주세요.' ); window.location.href = '/dormitory_inspector_login';</script>";
   }
 }else {
-  echo "<script> alert( '등록된 학생이 아닙니다. 학년 반 번호를 잘 확인해 주세요.' ); window.location.href = '/dormitory_inspector_login';</script>";
+  echo "<script> alert( '등록된 학생이 아닙니다. 학년 반 번호를 다시 확인해 주세요.' ); window.location.href = '/dormitory_inspector_login';</script>";
 }
 ?>
