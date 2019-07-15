@@ -53,6 +53,25 @@
          </div>
        </div>
        <!-- END LEFT SIDEBAR -->
+       <div class="main">
+   			<!-- MAIN CONTENT -->
+   			<div class="main-content">
+   				<div class="container-fluid">
+              <div class="row">
+                <div class="col">
+                  <!-- RECENT PURCHASES -->
+                  <?php
+                    include_once('./include/dormitory_inspector_notice.php');
+                   ?>
+                  <!-- END RECENT PURCHASES -->
+                </div>
+              </div>
+   				</div>
+   			</div>
+   			<!-- END MAIN CONTENT -->
+   		</div>
+   		<!-- END MAIN -->
+
   		<!-- MAIN -->
   		<div class="main" style="padding-top: 82px;">
   			<!-- MAIN CONTENT -->

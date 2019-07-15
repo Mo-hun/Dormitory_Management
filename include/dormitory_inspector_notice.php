@@ -18,6 +18,7 @@
            <th>연번</th>
            <th>제목</th>
            <th>내용</th>
+           <th>공지 내리기</th>
          </tr>
        </thead>
        <tbody>
@@ -29,9 +30,15 @@
            <td><?php echo $no; ?></td>
            <td><?php echo $rank['notice_title']; ?></td>
            <td><?php echo $rank['notice_body']; ?></td>
+           <td onclick="window.location.href='/dormitory_inspector_notice_delete?no=<?=$rank['notice_no']?>'" style="cursor:pointer;">공지 제거</td>
          </tr>
        <?php $no++;} ?>
        </tbody>
      </table>
+   </div>
+   <div class="panel-footer">
+     <div class="row">
+       <div class="text-right"><a href="/dormitory_inspector_notice_write" class="btn btn-primary">전달사항 추가</a></div>
+     </div>
    </div>
  </div>

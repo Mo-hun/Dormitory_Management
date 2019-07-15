@@ -10,3 +10,5 @@
 <br><br>
 
 Pre-Alpha 1.0
+
+Open Beta Test 1.0.0

@@ -15,7 +15,7 @@
   </head>
   <body>
     <?php
-      include_once('./include/isstudent.php');
+      include_once('./include/islogin.php');
      ?>
   	<!-- WRAPPER -->
   	<div id="wrapper">
