@@ -39,6 +39,7 @@
                <li><a href="/student_point"><i class="lnr lnr-magic-wand"></i> <span>상*벌점 조회</span></a></li>
                <li><a href="/student_mypage" class="active"><i class="lnr lnr-star-empty"></i> <span>계정 정보변경</span></a></li>
                <li><a href="/student_notice"><i class="lnr lnr-bullhorn"></i> <span>전달사항</span></a></li>
+               <li><a href="/student_laptop"><i class="lnr lnr-laptop"></i> <span>노트북 대여</span></a></li>
              </ul>
            </nav>
          </div>

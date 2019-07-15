@@ -5,7 +5,7 @@
  ?>
  <div class="panel">
    <div class="panel-heading">
-     <h3 class="panel-title">상점 순위표</h3>
+     <h3 class="panel-title">상점 순위표  (이 기능은 실제 서비스 시, 사감선생님에게만 제공되는 기능입니다.)</h3>
      <div class="right">
        <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
      </div>
