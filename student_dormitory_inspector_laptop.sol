@@ -27,7 +27,7 @@
         <div class="sidebar-scroll">
           <nav>
             <ul class="nav">
-              <li><a href="/dormitory_inspector_main" class="active"><i class="lnr lnr-home"></i> <span>메인</span></a></li>
+              <li><a href="/dormitory_inspector_main"><i class="lnr lnr-home"></i> <span>메인</span></a></li>
               <li><a href="/dormitory_inspector_go_point"><i class="lnr lnr-magic-wand"></i> <span>상*벌점 부여</span></a></li>
               <li><a href="/dormitory_inspector_volunteer" ><i class="lnr lnr-star-empty"></i> <span>봉사관리</span></a></li>
               <li><a href="/dormitory_inspector_student_check"><i class="lnr lnr-spell-check"></i> <span>점호/인원점검</span></a></li>
@@ -42,7 +42,7 @@
                   </ul>
                 </div>
               </li>
-              <li><a href="/student_dormitory_inspector_laptop"><i class="lnr lnr-laptop"></i> <span>노트북 대여</span></a></li>
+              <li><a href="/student_dormitory_inspector_laptop" class="active"><i class="lnr lnr-laptop"></i> <span>노트북 대여</span></a></li>
             </ul>
           </nav>
         </div>
