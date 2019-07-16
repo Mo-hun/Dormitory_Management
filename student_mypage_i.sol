@@ -14,7 +14,7 @@
      <?php
       include_once('./include/head_main.php');
       ?>
-    <title>벌점왕HS</title>
+    <title>벌점왕HS - 학생</title>
   </head>
   <body class="bg-dark text-white">
     <form action="./student_mypage_process"  method="POST">

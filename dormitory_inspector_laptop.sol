@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
   <head>
-  	<title>벌점왕 HS - 사감 - 메인</title>
+  	<title>벌점왕 HS - 사감</title>
   	<meta charset="utf-8">
   	<?php
       include_once('./include/template_head.php');
@@ -27,7 +27,7 @@
          <div class="sidebar-scroll">
            <nav>
              <ul class="nav">
-               <li><a href="/dormitory_inspector_main" class="active"><i class="lnr lnr-home"></i> <span>메인</span></a></li>
+               <li><a href="/dormitory_inspector_main"><i class="lnr lnr-home"></i> <span>메인</span></a></li>
                <li><a href="/dormitory_inspector_go_point"><i class="lnr lnr-magic-wand"></i> <span>상*벌점 부여</span></a></li>
                <li><a href="/dormitory_inspector_notice"><i class="lnr lnr-bullhorn"></i> <span>전달사항</span></a></li>
                <li>
@@ -40,7 +40,7 @@
                    </ul>
                  </div>
                </li>
-               <li><a href="/dormitory_inspector_laptop"><i class="lnr lnr-laptop"></i><span>노트북 대여</span></a></li>
+               <li><a href="/dormitory_inspector_laptop" class="active"><i class="lnr lnr-laptop"></i><span>노트북 대여</span></a></li>
              </ul>
            </nav>
          </div>

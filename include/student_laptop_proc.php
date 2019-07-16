@@ -9,6 +9,8 @@
   $laptop_you_no = $_SESSION['number']-1;
   if($laptop_no[(int)$laptop_you_no]){
     $laptop_no[(int)$laptop_you_no] = "0";
+  }else{
+    $laptop_no[(int)$laptop_you_no] = "1";
   }
   $laptop_update = join("",(array)$laptop_no);
   $update_query = "UPDATE laptop SET `".$class_no."`='".$laptop_update."' WHERE status = 1";

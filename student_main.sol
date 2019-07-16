@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
   <head>
-  	<title>벌점왕 HS - Student_main</title>
+  	<title>벌점왕 HS - 학생</title>
   	<meta charset="utf-8">
   	<?php
       include_once('./include/template_head.php');
