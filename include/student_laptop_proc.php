@@ -16,7 +16,7 @@
   $update_query = "UPDATE laptop SET `".$class_no."`='".$laptop_update."' WHERE status = 1";
   $update_result = mysqli_query($conn, $update_query);
   if($update_result){
-    $str = "<script>alert('성공!');window.location.href='/';</script>";
+    $str = "<script>alert('성공!');window.location.href='/student_laptop';</script>";
   }else{
     $str =  "<script>alert('실패!');</script>";
   }

@@ -41,17 +41,10 @@
   			<div class="main-content">
   				<div class="container-fluid">
              <div class="row">
-               <div class="col-md-6">
+               <div class="col-md">
                  <!-- RECENT PURCHASES -->
                  <?php
                    include_once('./include/student_laptop.php');
-                  ?>
-                 <!-- END RECENT PURCHASES -->
-               </div>
-               <div class="col-md-6">
-                 <!-- RECENT PURCHASES -->
-                 <?php
-                   include_once('./include/low_point.php');
                   ?>
                  <!-- END RECENT PURCHASES -->
                </div>

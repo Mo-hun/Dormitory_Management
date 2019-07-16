@@ -54,7 +54,7 @@
   			<div class="main-content">
   				<div class="container-fluid">
             <?php
-              include_once('./include/copyright.php');
+              include_once('./include/student_dormitory_inspector_laptop_view.php');
              ?>
   			   </div>
   		  </div>
