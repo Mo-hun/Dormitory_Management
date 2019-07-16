@@ -1,6 +1,6 @@
 <?php
-$Grade = 1011;
-$Class = 1011;
+$Grade = 1109;
+$Class = 1109;
 $GroupCode = mysqli_real_escape_string($conn, $_POST['Grade']);
 if($Grade != $GroupCode){
   header('Location: /');

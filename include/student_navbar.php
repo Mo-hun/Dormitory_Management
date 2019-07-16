@@ -8,6 +8,7 @@
       <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
     </div>
     <div class="navbar-btn navbar-btn-right">
+      환영합니다, &nbsp<?php echo $_SESSION['name']; ?>님! &nbsp&nbsp
       <a class="btn btn-info" href="javascript:history.back();" title="이전"><span>뒤로</span></a>
       <a class="btn btn-info" href="/student_mypage" title="정보변경"><span>정보변경</span></a>
       <a class="btn btn-success" href="/logout" title="LOG OUT"><span>LOG OUT</span></a>

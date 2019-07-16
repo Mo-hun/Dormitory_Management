@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
   <head>
-  	<title>벌점왕 HS - 자치위원회 - 메인</title>
+  	<title>벌점왕 HS - 자치위원회</title>
   	<meta charset="utf-8">
   	<?php
       include_once('./include/template_head.php');
@@ -19,22 +19,9 @@
      ?>
   	<!-- WRAPPER -->
   	<div id="wrapper">
-      <!-- NAVBAR -->
-      <nav class="navbar-default navbar-fixed-top">
-        <div class="brand" style="padding: 15px;">
-          <a href="/main"><img src="logo_black.png" alt="Logo" height="50px"></a>
-        </div>
-        <div class="container-fluid">
-          <div class="navbar-btn">
-            <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
-          </div>
-          <div class="navbar-btn navbar-btn-right">
-            <a class="btn btn-info" href="/student_dormitory_inspector_mypage" title="정보변경"><span>정보변경</span></a>
-            <a class="btn btn-success" href="/logout" title="LOG OUT"><span>LOG OUT</span></a>
-          </div>
-        </div>
-      </nav>
-      <!-- END NAVBAR -->
+      <?php
+          include_once('./include/student_dormitory_inspector_navbar.php');
+       ?>
       <!-- LEFT SIDEBAR -->
       <div id="sidebar-nav" class="sidebar">
         <div class="sidebar-scroll">
