@@ -39,7 +39,6 @@
                    </ul>
                  </div>
                </li>
-               <li><a href="/dormitory_inspector_laptop"><i class="lnr lnr-laptop"></i><span>노트북 대여</span></a></li>
              </ul>
            </nav>
          </div>
