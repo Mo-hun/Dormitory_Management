@@ -1,4 +1,4 @@
-# 벌점왕 HS
+# 벌점왕 HS :school:
 ## 광주소프트웨어마이스터고등학교 기숙사 사생 관리 웹사이트
 
 <a href="http://벌점왕hs.com" alt="GoWebSite">

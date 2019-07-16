@@ -43,7 +43,6 @@
                  <div id="subPages"class="collapse">
                    <ul class="nav">
                      <li><a href="/dormitory_inspector_change_room" class="">호실 변경</a></li>
-                     <li><a href="/dormitory_inspector_change_year" class="">학년 변경</a></li>
                      <li><a href="/dormitory_inspector_mypage">계정 정보 변경</a></li>
                    </ul>
                  </div>

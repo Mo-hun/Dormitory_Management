@@ -41,5 +41,4 @@
 </div>
 <!-- /main -->
 <!-- status -->
-  <p class="text-right text-dark"><small><?php echo $status; ?></small></p>
 <!-- /status -->
