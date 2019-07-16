@@ -44,10 +44,17 @@
               include_once('./include/student_status.php');
              ?>
              <div class="row">
-               <div class="col-md">
+               <div class="col-md-6">
                  <!-- RECENT PURCHASES -->
                  <?php
                    include_once('./include/student_point_main.php');
+                  ?>
+                 <!-- END RECENT PURCHASES -->
+               </div>
+               <div class="col-md-6">
+                 <!-- RECENT PURCHASES -->
+                 <?php
+                   include_once('./include/low_point.php');
                   ?>
                  <!-- END RECENT PURCHASES -->
                </div>
