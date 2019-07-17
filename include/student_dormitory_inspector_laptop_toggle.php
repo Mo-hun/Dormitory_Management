@@ -1,5 +1,5 @@
 <?php
-  $idx = $_GET['idx'];
+  $idx = mysqli_real_escape_string($conn, $_GET['idx']);
   $isquery = "SELECT * FROM `laptop` WHERE `laptop_idx` = ".$idx;
   $is_result = mysqli_query($conn, $isquery);
  ?>

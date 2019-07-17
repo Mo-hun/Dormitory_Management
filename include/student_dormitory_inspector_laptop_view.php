@@ -16,6 +16,7 @@
             <th>일자</th>
             <th>대여 인원 수</th>
             <th>현재 상태</th>
+            <th>출력 하기</th>
           </tr>
         </thead>
         <tbody>
@@ -38,12 +39,14 @@
             }else{
               $status = "<a href='/student_dormitory_inspector_laptop_toggle?idx=".$rank['laptop_idx']."'>진행중</a>";
             }
+            $link = "<a href='/student_dormitory_inspector_laptop_print?idx=".$rank['laptop_idx']."'>출력</a>";
             $date = $rank['date'];
            ?>
           <tr>
             <td><?php echo $date; ?></td>
             <td><?php echo $count_sum; ?>명</td>
             <td><?php echo $status; ?></td>
+            <td><?php echo $link; ?></td>
           </tr>
         <?php } ?>
         </tbody>
