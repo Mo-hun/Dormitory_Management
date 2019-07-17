@@ -48,6 +48,7 @@
                  </div>
                </li>
                <li><a href="/dormitory_inspector_song"><i class="lnr lnr-music-note"></i> <span>노래 관리</span></a></li>
+               <li><a href="/dormitory_inspector_stay"><i class="lnr lnr-enter"></i> <span>잔류</span></a></li>
              </ul>
            </nav>
          </div>

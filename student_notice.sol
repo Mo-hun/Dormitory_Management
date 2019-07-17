@@ -32,6 +32,7 @@
                <li><a href="/student_notice" class="active"><i class="lnr lnr-bullhorn"></i> <span>전달사항</span></a></li>
                <li><a href="/student_laptop"><i class="lnr lnr-laptop"></i> <span>노트북 대여</span></a></li>
                <li><a href="/student_song_add"><i class="lnr lnr-music-note"></i> <span>노래 신청</span></a></li>
+               <li><a href="/student_stay"><i class="lnr lnr-enter"></i> <span>잔류</span></a></li>
              </ul>
            </nav>
          </div>
