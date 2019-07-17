@@ -19,6 +19,7 @@
            <th>아티스트</th>
            <th>신청자</th>
            <th>링크</th>
+           <th>확인처리</th>
          </tr>
        </thead>
        <tbody>
@@ -32,6 +33,7 @@
            <td><?php echo $song['singer']; ?></td>
            <td><?php echo $song['student']; ?></td>
            <td><a href='<?php echo $song['link']; ?>' target="_blank"><?php echo $song['link']; ?></a></td>
+           <td><a href='/dormitory_inspector_song_check?idx=<?php echo $song['song_idx'];?>'>확인처리</a></td>
          </tr>
        <?php $no++;
      } ?>
@@ -40,7 +42,7 @@
    </div>
    <div class="panel-footer">
      <div class="row">
-       <div class="text-right"><a href="/student_song_add" class="btn btn-primary">노래 신청하기</a></div>
+       <div class="text-right"><a href="/dormitory_inspector_song" class="btn btn-primary">전체 기록 조회</a></div>
      </div>
    </div>
  </div>

@@ -1,7 +1,10 @@
 <?php
-$title = mysqli_real_escape_string($conn, $_POST['title']);
-$artist = mysqli_real_escape_string($conn, $_POST['artist']);
-$link = mysqli_real_escape_string($conn, $_POST['link']);
+$title_xss = mysqli_real_escape_string($conn, $_POST['title']);
+$title = htmlspecialchars($title_xss);
+$artist_xss = mysqli_real_escape_string($conn, $_POST['artist']);
+$artist = htmlspecialchars($artist_xss);
+$link_xss = mysqli_real_escape_string($conn, $_POST['link']);
+$link = htmlspecialchars($link_xss);
 $check_query = "SELECT COUNT(*) FROM song WHERE  student_code=".$_SESSION['idx']." AND status= 1";
 $check_result = mysqli_query($conn, $check_query);
 $check = mysqli_fetch_array($check_result);

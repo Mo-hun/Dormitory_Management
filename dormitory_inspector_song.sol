@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
   <head>
-  	<title>벌점왕 HS - 사감 - 봉사 관리</title>
+  	<title>벌점왕 HS - 사감 - 노래</title>
   	<meta charset="utf-8">
   	<?php
       include_once('./include/template_head.php');
@@ -39,50 +39,41 @@
                <li><a href="/dormitory_inspector_go_point"><i class="lnr lnr-magic-wand"></i> <span>상*벌점 부여</span></a></li>
                <li><a href="/dormitory_inspector_notice"><i class="lnr lnr-bullhorn"></i> <span>전달사항</span></a></li>
                <li>
-                 <a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-pencil"></i> <span>정보변경</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                 <a href="#subPages" data-toggle="collapse" class="collapsed" aria-expanded="true"><i class="lnr lnr-pencil"></i> <span>정보변경</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
                  <div id="subPages"class="collapse">
                    <ul class="nav">
                      <li><a href="/dormitory_inspector_change_room" class="">호실 변경</a></li>
-                     <li><a href="/dormitory_inspector_mypage" class="">계정 정보 변경</a></li>
+                     <li><a href="/dormitory_inspector_mypage">계정 정보 변경</a></li>
                    </ul>
                  </div>
                </li>
-               <li><a href="/dormitory_inspector_song"><i class="lnr lnr-music-note"></i> <span>노래 관리</span></a></li>
+               <li><a href="/dormitory_inspector_song" class="active"><i class="lnr lnr-music-note"></i><span>노래 관리</span></a></li>
              </ul>
            </nav>
          </div>
        </div>
        <!-- END LEFT SIDEBAR -->
-  		<!-- MAIN -->
-      <div class="main" style="padding-top: 82px;">
-  			<!-- MAIN CONTENT -->
-          <iframe name="ifr" src="/dormitory_inspector_volunteer_i" frameborder="0" height="5000px" width="100%"></iframe>
-  			<!-- END MAIN CONTENT -->
-  	   </div>
+       <div class="main">
+   			<!-- MAIN CONTENT -->
+   			<div class="main-content">
+   				<div class="container-fluid">
+              <div class="row">
+                <div class="col">
+                  <!-- RECENT PURCHASES -->
+                  <?php
+                    include_once('./include/dormitory_inspector_song.php');
+                   ?>
+                  <!-- END RECENT PURCHASES -->
+                </div>
+              </div>
+   				</div>
+   			</div>
+   			<!-- END MAIN CONTENT -->
+   		</div>
+   		<!-- END MAIN -->
   		<!-- END MAIN -->
   		<div class="clearfix"></div>
     </div>
-    <script type="text/javascript">
-      function custom_timer(second){
-        document.getElementById('reset_second').innerHTML = second;
-        if(second <= 1){
-          setTimeout("custom_location()", 1000);
-        }else{
-          --second;
-          setTimeout("custom_timer("+second+");", 1000);
-        }
-      };
-      function custom_location(){
-        var check = confirm("새로 고침 하시겠습니까?");
-        if(check == true){
-          window.location.href='/go_point_i';
-        }else{
-          document.getElementById("reset_second").innerHTML = 3;
-          custom_timer(3);
-        }
-      };
-      custom_timer(3);
-    </script>
   	<!-- END WRAPPER -->
     <?php
       include_once('./include/copyright.php');

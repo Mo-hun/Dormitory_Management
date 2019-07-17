@@ -55,7 +55,7 @@
                <div class="col-md-6">
                  <!-- RECENT PURCHASES -->
                  <?php
-                   include_once('./include/low_point.php');
+                   include_once('./include/student_notice_main.php');
                   ?>
                  <!-- END RECENT PURCHASES -->
                </div>
@@ -65,6 +65,13 @@
                  <!-- RECENT PURCHASES -->
                  <?php
                    include_once('./include/student_song.php');
+                  ?>
+                 <!-- END RECENT PURCHASES -->
+               </div>
+               <div class="col-md-6">
+                 <!-- RECENT PURCHASES -->
+                 <?php
+                   include_once('./include/low_point.php');
                   ?>
                  <!-- END RECENT PURCHASES -->
                </div>

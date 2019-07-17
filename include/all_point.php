@@ -25,7 +25,7 @@
          <?php
          $no = 1;
          while($rank = mysqli_fetch_assoc($rank_result)) {
-           if($rank['user_grade'] == 4860 || $rank['user_grade'] == 1011){
+           if($rank['user_grade'] == 4860 || $rank['user_grade'] == 1109){
              $rank['user_grade'] = "-";
              $rank['user_class'] = "-";
              $rank['user_number'] = "-";

@@ -47,6 +47,7 @@
                    </ul>
                  </div>
                </li>
+               <li><a href="/dormitory_inspector_song"><i class="lnr lnr-music-note"></i> <span>노래 관리</span></a></li>
              </ul>
            </nav>
          </div>

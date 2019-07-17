@@ -1,6 +1,6 @@
 <?php
   include_once('./include/dbconnect.php');
-  $song_query = "SELECT * FROM song WHERE status = 1 ORDER BY song_idx DESC LIMIT 5";
+  $song_query = "SELECT * FROM `song` ORDER BY `song_idx` DESC";
   $song_result = mysqli_query($conn, $song_query);
  ?>
  <div class="panel">
@@ -19,12 +19,20 @@
            <th>아티스트</th>
            <th>신청자</th>
            <th>링크</th>
+           <th>상태</th>
+           <th>확인처리</th>
          </tr>
        </thead>
        <tbody>
          <?php
          $no = 1;
-         while($song = mysqli_fetch_assoc($song_result)) {
+         $status;
+         while($song = mysqli_fetch_assoc($song_result)){
+           if($song['status'] == 1){
+             $status = "대기";
+           }else{
+             $status = "완료";
+           }
           ?>
          <tr>
            <td><?php echo $no; ?></td>
@@ -32,6 +40,8 @@
            <td><?php echo $song['singer']; ?></td>
            <td><?php echo $song['student']; ?></td>
            <td><a href='<?php echo $song['link']; ?>' target="_blank"><?php echo $song['link']; ?></a></td>
+           <td><?php echo $status; ?></td>
+           <td><a href='/dormitory_inspector_song_check?idx=<?php echo $song['song_idx'];?>'>확인처리</a></td>
          </tr>
        <?php $no++;
      } ?>
@@ -39,8 +49,5 @@
      </table>
    </div>
    <div class="panel-footer">
-     <div class="row">
-       <div class="text-right"><a href="/student_song_add" class="btn btn-primary">노래 신청하기</a></div>
-     </div>
    </div>
  </div>

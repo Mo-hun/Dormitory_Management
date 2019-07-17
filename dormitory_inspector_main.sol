@@ -39,6 +39,7 @@
                    </ul>
                  </div>
                </li>
+               <li><a href="/dormitory_inspector_song"><i class="lnr lnr-music-note"></i> <span>노래 관리</span></a></li>
              </ul>
            </nav>
          </div>
@@ -54,6 +55,22 @@
                 <!-- RECENT PURCHASES -->
                 <?php
                   include_once('./include/top_point.php');
+                 ?>
+                <!-- END RECENT PURCHASES -->
+              </div>
+              <div class="col-md-6">
+                <!-- RECENT PURCHASES -->
+                <?php
+                  include_once('./include/low_point.php');
+                 ?>
+                <!-- END RECENT PURCHASES -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <!-- RECENT PURCHASES -->
+                <?php
+                  include_once('./include/dormitory_inspector_song_main.php');
                  ?>
                 <!-- END RECENT PURCHASES -->
               </div>
