@@ -32,7 +32,7 @@
            <td><?php echo $song['name']; ?></td>
            <td><?php echo $song['singer']; ?></td>
            <td><?php echo $song['student']; ?></td>
-           <td><a href='<?php echo $song['link']; ?>' target="_blank"><?php echo $song['link']; ?></a></td>
+           <td><a href='<?php echo $song['link']; ?>' target="_blank">바로가기</a></td>
            <td><a href='/dormitory_inspector_song_check?idx=<?php echo $song['song_idx'];?>'>확인처리</a></td>
          </tr>
        <?php $no++;

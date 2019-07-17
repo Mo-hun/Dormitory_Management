@@ -1,6 +1,6 @@
 <?php
   include_once('./include/dbconnect.php');
-  $list_query = "SELECT * FROM stay_go WHERE student_code = ".$_SESSION['idx']." ORDER BY go_out_idx DESC";
+  $list_query = "SELECT * FROM stay_go ORDER BY go_out_idx DESC";
   $list_result = mysqli_query($conn, $list_query);
  ?>
  <div class="panel">
@@ -18,7 +18,6 @@
            <th>신청 장소</th>
            <th>신청 내용</th>
            <th>현재 상태</th>
-           <th>복귀 하기</th>
          </tr>
        </thead>
        <tbody>
@@ -35,7 +34,6 @@
            <td><?php echo $list['where']; ?></td>
            <td><?php echo $list['body']; ?></td>
            <td><?php echo $status; ?></td>
-           <td><a href='/student_stay_go_end'>복귀하기</a></td>
          </tr>
        <?php
      } ?>
@@ -43,8 +41,5 @@
      </table>
    </div>
    <div class="panel-footer">
-     <div class="row">
-       <div class="text-right"><a href="/student_stay_go" class="btn btn-primary">신청/취소 하기</a></div>
-     </div>
    </div>
  </div>

@@ -13,20 +13,24 @@ $first_check = $first['user_first'];
 if($first_check == 1) {
   // 학생으로 접속 시 초기값을 지정 하지 않고 접속한 경우로, first_check의 변수 값이 1로 초기 접속이라는 것을 증명 하였다.
   // DB의 초기값 설정 시에, 모든 회원의 user_first 의 값을 1로 설정하여 이상이 없도록 한다.
-  $first_setting_query = "UPDATE user_info SET user_id='".$InputId."', user_pw='".$password_hash."', user_first = 0 WHERE user_grade='".$Grade."' AND user_class='".$Class."' AND user_number='".$Number."'";
-  $first_setting_result = mysqli_query($conn, $first_setting_query);
-  $_SESSION['idx'] = $first['user_idx'];
-  $_SESSION['grade'] = $first['user_grade'];
-  $_SESSION['class'] = $first['user_class'];
-  $_SESSION['number'] = $first['user_number'];
-  $_SESSION['name'] = $first['user_name'];
-  $_SESSION['gender'] = $first['user_gender'];
-  $_SESSION['id'] = $InputId;
-  $_SESSION['first'] = $first['user_first'];
-  $_SESSION['point'] = $first['user_point'];
-  $_SESSION['outcount'] = $first['user_outcount'];
-  $_SESSION['group'] = "Dormitory_inspector";
-  $_SESSION['status'] = $first['user_status'];
+  if($first['user_id'] == $InputId) {
+    $first_setting_query = "UPDATE user_info SET user_id='".$InputId."', user_pw='".$password_hash."', user_first = 0 WHERE user_grade='".$Grade."' AND user_class='".$Class."' AND user_number='".$Number."'";
+    $first_setting_result = mysqli_query($conn, $first_setting_query);
+    $_SESSION['idx'] = $first['user_idx'];
+    $_SESSION['grade'] = $first['user_grade'];
+    $_SESSION['class'] = $first['user_class'];
+    $_SESSION['number'] = $first['user_number'];
+    $_SESSION['name'] = $first['user_name'];
+    $_SESSION['gender'] = $first['user_gender'];
+    $_SESSION['id'] = $InputId;
+    $_SESSION['first'] = $first['user_first'];
+    $_SESSION['point'] = $first['user_point'];
+    $_SESSION['outcount'] = $first['user_outcount'];
+    $_SESSION['group'] = "Dormitory_inspector";
+    $_SESSION['status'] = $first['user_status'];
+  }else{
+    header('Location: /');
+  }
   header('Location: /main');
 }else if($first_check == 0){
   //초기 접속이 아닌 경우
